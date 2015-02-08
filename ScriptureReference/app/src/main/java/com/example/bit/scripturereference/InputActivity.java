@@ -45,11 +45,20 @@ public class InputActivity extends ActionBarActivity {
 
     public void sendMessages(View view) {
         Intent intent = new Intent(this, DisplayActivity.class);
+
         EditText editText = (EditText) findViewById(R.id.editText);
         String book = editText.getText().toString();
+
+        EditText editText2 = (EditText) findViewById(R.id.editText2);
+        String chapter = editText2.getText().toString();
+
+        EditText editText3 = (EditText) findViewById(R.id.editText3);
+        String verse = editText3.getText().toString();
+
         intent.putExtra(BOOK, book);
-        intent.putExtra(CHAPTER, book);
-        intent.putExtra(VERSE, book);
+        intent.putExtra(CHAPTER, chapter);
+        intent.putExtra(VERSE, verse);
+
         startActivity(intent);
     }
 }

@@ -36,6 +36,7 @@ public class DisplayActivity extends ActionBarActivity {
         textView.setText(finalStr);
 
         setContentView(textView);
+
     }
 
     @Override
