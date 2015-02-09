@@ -12,9 +12,11 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:textColor="#ff81a359"
-        android:id="@+id/display" />
+        android:id="@+id/display"
+        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
 </RelativeLayout>
