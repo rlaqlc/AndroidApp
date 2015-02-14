@@ -51,7 +51,7 @@ public class MainActivity extends ActionBarActivity {
     You shouldn't call those overridden methods manually because it will be called automatically.
     However,onProgressUpdate, which is also a main thread, can be called in background thread using
     publishProgress() method. Note that all other local methods that are being called in
-    doInBackground(),such as createFile and loadFile belongs to background thread.
+    doInBackground(), such as createFile and loadFile belongs to background thread.
     Just think about it for a moment.
 
     AsyncTask<Some_Type, HERE, Some_Type>. The middle one is used by onProgressUpdate();
