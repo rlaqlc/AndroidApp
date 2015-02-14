@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
    /*
     How AsyncTask Works
 
-    We start by creating an instance of FileTask class and call execute function.
+    We start by creating an instance of FileTask class and calling execute function.
       new FileTask().execute("some string")
     For this assignment, a string will be passed in, but it can be whatever type you want.
 
