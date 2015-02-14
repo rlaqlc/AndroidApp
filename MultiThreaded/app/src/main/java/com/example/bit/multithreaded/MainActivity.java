@@ -38,10 +38,10 @@ public class MainActivity extends ActionBarActivity {
     Because we can pass multiple items through execution, we use [0] to access the passed data.
 
     When AsyncTask executes, it first calls onPreExecute(). doInBackground() follows right after
-    it. Note that except doInBackground function, all other "override" functions are the main
+    it. Note that except doInBackground function, all other overridden functions are the main
     thread, aka UI thread. Main (UI) thread only needs to handle manipulating the UI stuff while
     the background thread handles creating and writing to a file and reading numbers from the file
-    and add into an ArrayList.
+    and adding into an ArrayList.
 
     When doInBackground is finished, it will return the type that you have specified
     in AsyncTask<Some_Type, Some_Type, HERE>. It will be passed into onPostExecute method.
@@ -185,10 +185,6 @@ public class MainActivity extends ActionBarActivity {
 
         private List<Integer> list;
     } // end of FileTask class
-
-    MainActivity() {
-        integerArrayAdapter = null;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
